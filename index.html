@@ -1,10 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noor Nail Art</title>
+    <title>Noor Nail Art & Mehndi Art</title>
 
     <style>
         * {
@@ -41,13 +40,20 @@
             text-align: center;
             padding: 15px;
             box-shadow: 0 2px 8px #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         nav a {
             color: #d81b60;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 12px;
             font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #8e1240;
         }
 
         .hero {
@@ -74,6 +80,19 @@
             border-radius: 25px;
             text-decoration: none;
             font-weight: bold;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background: #ad1457;
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .whatsapp:hover {
+            background: #1da851;
         }
 
         section {
@@ -100,11 +119,24 @@
             padding: 25px;
             border-radius: 15px;
             box-shadow: 0 3px 12px #ddd;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         .card h3 {
             color: #c2185b;
             margin-bottom: 10px;
+        }
+
+        .mehndi-section {
+            background: #fff0f5;
+        }
+
+        .mehndi-title {
+            color: #8b5e3c;
         }
 
         .gallery {
@@ -119,6 +151,7 @@
             height: 250px;
             object-fit: cover;
             border-radius: 15px;
+            box-shadow: 0 3px 10px #ddd;
         }
 
         .contact {
@@ -145,53 +178,73 @@
                 display: inline-block;
                 margin: 5px;
             }
+
+            .card {
+                width: 90%;
+                max-width: 300px;
+            }
         }
     </style>
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <h1>NOOR NAIL ART</h1>
-        <p>Beautiful • Creative • Stylish Nail Art</p>
+        <p>Beautiful • Creative • Stylish Nail Art & Mehndi Art</p>
     </header>
 
+    <!-- NAVIGATION -->
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#mehndi">Mehndi Art</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- HOME -->
     <section class="hero" id="home">
         <h2>Welcome to Noor Nail Art</h2>
-        <p>Make your nails beautiful and stylish with our creative designs.</p>
-        <a class="button" href="#contact">Book Now</a>
+        <p>Beautiful Nail Art & Creative Mehndi Designs for Every Special Occasion.</p>
+
+        <a class="button" href="#services">View Services</a>
+
+        <a class="button whatsapp"
+           href="https://wa.me/917990129417"
+           target="_blank">
+            💬 Book on WhatsApp
+        </a>
     </section>
 
+    <!-- ABOUT -->
     <section id="about">
         <h2>About Us</h2>
+
         <p>
-            Noor Nail Art is dedicated to creating beautiful, elegant and
-            creative nail art designs for every special occasion.
-            We love making your nails look stylish and unique.
+            Noor Nail Art offers beautiful, elegant and creative nail art
+            and mehndi designs for every special occasion. We create stylish
+            designs with care and attention to detail to make your special
+            moments even more beautiful.
         </p>
     </section>
 
+    <!-- NAIL ART SERVICES -->
     <section id="services">
-        <h2>Our Services</h2>
+        <h2>💅 Our Nail Art Services</h2>
 
         <div class="services">
 
             <div class="card">
                 <h3>💅 Bridal Nail Art</h3>
-                <p>Beautiful designs for your special wedding day.</p>
+                <p>Beautiful and elegant nail designs for your special wedding day.</p>
             </div>
 
             <div class="card">
                 <h3>✨ Party Nail Art</h3>
-                <p>Stylish and attractive designs for parties and events.</p>
+                <p>Stylish and attractive designs for parties and special events.</p>
             </div>
 
             <div class="card">
@@ -199,35 +252,125 @@
                 <p>Elegant and simple designs for everyday beauty.</p>
             </div>
 
+            <div class="card">
+                <h3>💖 Custom Nail Art</h3>
+                <p>Customized nail designs according to your choice and style.</p>
+            </div>
+
         </div>
     </section>
 
+    <!-- MEHNDI ART -->
+    <section class="mehndi-section" id="mehndi">
+        <h2 class="mehndi-title">🌿 Mehndi Art</h2>
+
+        <p style="margin-bottom: 30px;">
+            Beautiful mehndi designs for weddings, engagements,
+            festivals and special occasions.
+        </p>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>🌿 Bridal Mehndi</h3>
+                <p>Beautiful and detailed bridal mehndi designs for your wedding day.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌸 Arabic Mehndi</h3>
+                <p>Stylish Arabic mehndi designs with beautiful floral patterns.</p>
+            </div>
+
+            <div class="card">
+                <h3>✨ Engagement Mehndi</h3>
+                <p>Elegant mehndi designs perfect for engagement ceremonies.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎉 Party & Festival Mehndi</h3>
+                <p>Simple and attractive mehndi designs for parties and festivals.</p>
+            </div>
+
+            <div class="card">
+                <h3>💚 Custom Mehndi</h3>
+                <p>Customized mehndi designs according to your choice and occasion.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌺 Full Hand Mehndi</h3>
+                <p>Beautiful full-hand mehndi designs with creative detailing.</p>
+            </div>
+
+        </div>
+
+        <br>
+
+        <a class="button whatsapp"
+           href="https://wa.me/917990129417?text=Hello%20Noor%20Nail%20Art%2C%20I%20want%20to%20book%20Mehndi%20Art."
+           target="_blank">
+            💬 Book Mehndi on WhatsApp
+        </a>
+    </section>
+
+    <!-- GALLERY -->
     <section id="gallery">
-        <h2>Our Gallery</h2>
+        <h2>📸 Our Gallery</h2>
+
+        <h3 style="color:#d81b60; margin:25px 0 15px;">
+            💅 Nail Art Gallery
+        </h3>
 
         <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=500&q=80" alt="Nail Art">
-            <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=500&q=80" alt="Nail Design">
-            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=500&q=80" alt="Beautiful Nails">
+
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=500&q=80"
+                 alt="Nail Art">
+
+            <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=500&q=80"
+                 alt="Nail Design">
+
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=500&q=80"
+                 alt="Beautiful Nails">
+
+        </div>
+
+        <h3 style="color:#8b5e3c; margin:40px 0 15px;">
+            🌿 Mehndi Art Gallery
+        </h3>
+
+        <div class="gallery">
+
+            <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=500&q=80"
+                 alt="Mehndi Art">
+
+            <img src="https://images.unsplash.com/photo-1610173827043-6e7e8c4b6c4c?auto=format&fit=crop&w=500&q=80"
+                 alt="Mehndi Design">
+
+            <img src="https://images.unsplash.com/photo-1596558450268-9c27524ba856?auto=format&fit=crop&w=500&q=80"
+                 alt="Bridal Mehndi">
+
         </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="contact" id="contact">
-        <h2>Contact Us</h2>
+        <h2>📞 Contact Us</h2>
 
-        <p>📞 Phone: +91 XXXXX XXXXX</p>
-        <p>📧 Email: noornailart@example.com</p>
+        <p>📱 WhatsApp: +91 7990129417</p>
         <p>📍 Location: Gujarat, India</p>
 
         <br>
 
-        <a class="button" href="https://wa.me/91XXXXXXXXXX">
-            WhatsApp Us
+        <a class="button whatsapp"
+           href="https://wa.me/917990129417"
+           target="_blank">
+            💬 WhatsApp Us
         </a>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 Noor Nail Art. All Rights Reserved.</p>
+        <p>Nail Art • Mehndi Art • Bridal Services</p>
     </footer>
 
 </body>
